@@ -20,7 +20,7 @@ function proxyon(){
   echo -e "\nProxy environment enabled."
 }
 function proxyoff(){
-  echo "Disabling proxy for user 'cole.gentry'..."
+  echo "Disabling proxy configs"
   unset HTTP_PROXY
   unset http_proxy
   unset HTTPS_PROXY
