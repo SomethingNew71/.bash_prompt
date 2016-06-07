@@ -16,7 +16,7 @@ function proxyon(){
   export HTTPS_PROXY=$http_proxy
   export ftp_proxy=$http_proxy
   export rsync_proxy=$http_proxy
-  export no_proxy="*.local, 169.254/16, 168.162.*, localhost, 127.0.0.1, 10.*"
+  export no_proxy="*.local, 169.254/16"
   echo -e "\nProxy environment enabled."
 }
 function proxyoff(){
