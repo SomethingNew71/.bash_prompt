@@ -7,9 +7,10 @@ fi
 function proxyon(){
   ## Prompts in terminal
   echo -n "Enter your ZID:"
-  read -n -es usernames
+  read -e username
   echo -n "Please enter password:"
-  read -n -es password
+  read -es password
+  echo
   export http_proxy="http://$username:$password@10.43.196.134:8080/"
   export https_proxy=$http_proxy
   export HTTP_PROXY=$http_proxy
@@ -20,7 +21,7 @@ function proxyon(){
   echo -e "\nProxy environment enabled."
 }
 function proxyoff(){
-  echo "Disabling proxy config"
+  echo "Disabling proxy enviroment"
   unset HTTP_PROXY
   unset http_proxy
   unset HTTPS_PROXY
