@@ -1,0 +1,101 @@
+@import "ui-mixins";
+@import "ui-variables";
+@import "alert";
+
+.settings-view {
+	.section .section-heading,
+	section .section-heading {
+		color: @text-color;
+	}
+
+	.config-menu {
+		background: @dark-flat-ui-dark-gray;
+		padding-top: 0;
+
+		.nav li.active .icon:before {
+			.accent(color);
+		}
+	}
+
+	.btn.active-theme-settings {
+		margin-left: 0;
+	}
+
+	atom-text-editor[mini]:hover {
+		background-color: @dark-flat-ui-super-duper-dark-gray;
+	}
+
+	input[type="checkbox"]:checked,
+	input[type="checkbox"]:active {
+		.accent(background-color);
+	}
+
+	select.form-control {
+		opacity: .75;
+
+		&:hover {
+//			background-color: @dark-flat-ui-super-duper-dark-gray;
+		}
+
+		&:active {
+			opacity: 1;
+		}
+	}
+
+	.package-card {
+		border: none;
+		background-color: @dark-flat-ui-light-gray;
+
+		&:hover {
+			background-color: lighten(@dark-flat-ui-light-gray, 3%);
+			color: @text-color-highlight;
+
+			.stats .stats-item .icon {
+				.accent(color);
+			}
+		}
+
+		.card-name a {
+			font-size: 22px;
+			color: inherit;
+		}
+	}
+
+	.alert {
+		background-color: @dark-flat-ui-light-gray;
+		color: @text-color-highlight;
+
+		&:hover {
+			background-color: lighten(@dark-flat-ui-light-gray, 3%);
+		}
+
+		&.featured-message {
+			margin: 10px 0;
+		}
+
+		.icon.close {
+			color: @text-color;
+
+			&:hover {
+				color: @text-color-highlight;
+			}
+		}
+	}
+
+	.packages .error-message {
+		padding: 0;
+
+		.padded {
+			padding-left: 0;
+		}
+	}
+
+	.table {
+		margin-bottom: 0;
+
+		th,
+		td {
+			border-color: @dark-flat-ui-dark-gray;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@import "ui-mixins";
+@import "ui-variables";
+@import "buttons";
+
+.pane-item {
+  .panel {
+    border-color: @inset-panel-border-color;
+  }
+}
+
+.pane-container,
+atom-pane-container {
+  atom-pane-axis.horizontal  {
+    border-right: 1px solid @pane-item-border-color;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  atom-pane-axis.vertical atom-pane {
+    border-bottom: 1px solid @pane-item-border-color;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  atom-pane {
+    background-color: @app-background-color;
+  }
+}

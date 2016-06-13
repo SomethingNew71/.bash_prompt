@@ -1,0 +1,43 @@
+{
+  "name": "earthsung-by-jackson-syntax",
+  "theme": "syntax",
+  "version": "0.3.0",
+  "description": "A port of Dayle Rees' Earthsong theme.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dayle",
+    "rees",
+    "earthsong",
+    "earthsung",
+    "port"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesseleite/earthsung-by-jackson-syntax-atom.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "readme": "# Earthsung By Jackson\n\nA port of [Dayle Rees](http://daylerees.github.io)' Earthsong theme for Atom.\n\n## UI Integration\n\nThis theme best integrates with Atom's [One Dark UI](https://atom.io/themes/one-dark-ui).  By default, UI is left untouched.  If you want the modified UI (as shown in the screenshot above) for better colour matching between UI syntax theme, add the following line to your Init Script and reload Atom.\n\n```coffee\ndocument.body.classList.add('earthsung-modify-ui')\n```\n\n## Screenshot\n\n![A screenshot of your theme](https://raw.githubusercontent.com/JesseLeite/earthsung-by-jackson-syntax-atom/master/screenshot.png)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jesseleite/earthsung-by-jackson-syntax-atom/issues"
+  },
+  "homepage": "https://github.com/jesseleite/earthsung-by-jackson-syntax-atom#readme",
+  "_id": "earthsung-by-jackson-syntax@0.3.0",
+  "_shasum": "a9d7983851f4a001b6a3b4742a006f395dd4dd5b",
+  "_resolved": "file:../d-115821-981-ingv6/package.tgz",
+  "_from": "../d-115821-981-ingv6/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

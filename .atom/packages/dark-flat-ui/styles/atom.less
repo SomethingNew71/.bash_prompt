@@ -1,0 +1,25 @@
+@import "ui-variables";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 300;
+}
+
+.scrollbars-visible-always {
+  /deep/ ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /deep/ ::-webkit-scrollbar-track,
+  /deep/ ::-webkit-scrollbar-corner {
+    background-color: @scrollbar-background-color;
+  }
+
+  /deep/ ::-webkit-scrollbar-thumb {
+    background: @scrollbar-color;
+  }
+}
