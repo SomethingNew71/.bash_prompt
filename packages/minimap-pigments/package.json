@@ -1,0 +1,84 @@
+{
+  "name": "minimap-pigments",
+  "main": "./lib/minimap-pigments",
+  "version": "0.2.1",
+  "description": "An Atom plugin to display pigments colors in the Minimap.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abe33/minimap-pigments.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "keywords": [
+    "minimap",
+    "pigments",
+    "colors",
+    "palette"
+  ],
+  "consumedServices": {
+    "minimap": {
+      "versions": {
+        "1.0.0": "consumeMinimapServiceV1"
+      }
+    },
+    "pigments.api": {
+      "versions": {
+        "1.0.0": "consumePigmentsServiceV1"
+      }
+    }
+  },
+  "dependencies": {
+    "event-kit": ">= 0.7.2"
+  },
+  "readme": "# minimap-pigments package [![Build Status](https://travis-ci.org/abe33/minimap-pigments.svg?branch=master)](https://travis-ci.org/abe33/minimap-pigments)\n\nAn Atom plugin to display pigments colors in the Minimap.\n\n![Screenshot](https://github.com/abe33/minimap-pigments/blob/master/screenshot.png?raw=true)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/abe33/minimap-pigments/issues"
+  },
+  "homepage": "https://github.com/abe33/minimap-pigments#readme",
+  "_id": "minimap-pigments@0.2.1",
+  "_shasum": "9272fa016e668391ca2f542a64b04c758a799956",
+  "_resolved": "file:../d-11649-78391-37m1pq/package.tgz",
+  "_from": "../d-11649-78391-37m1pq/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "event-kit",
+        "version": "2.0.0",
+        "path": "node_modules/event-kit/lib/event-kit.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/minimap-pigments-binding.coffee",
+        "lib/minimap-pigments.coffee"
+      ],
+      ".json": [
+        "node_modules/event-kit/api.json",
+        "node_modules/event-kit/package.json",
+        "package.json"
+      ],
+      ".js": [
+        "node_modules/event-kit/lib/composite-disposable.js",
+        "node_modules/event-kit/lib/disposable.js",
+        "node_modules/event-kit/lib/emitter.js",
+        "node_modules/event-kit/lib/event-kit.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "",
+          "spec"
+        ],
+        "dependencies": {
+          "event-kit": ">= 0.7.2"
+        }
+      }
+    ]
+  }
+}
