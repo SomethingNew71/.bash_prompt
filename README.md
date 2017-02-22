@@ -1,8 +1,10 @@
+![](image.png)
+
 # Bash Settings
 
 My personal custom .bash_prompt, .bashrc, and .bash_profile.
 
-The .bash_prompt is based on Extravagant Zsh Prompt.
+The .bash_prompt is based on Extravagant Zsh Prompt and a few others.
 
 ### Basic View
 
