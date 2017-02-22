@@ -1,17 +1,26 @@
-# Sets defualt location when terminal opens
-cd ~/Documents/proj
+# Declare Version
+###################################
+DARKRED=$(tput setaf 160)
+echo "$DARKRED Super-Bash Version 1.0"
 
-# Sets bash_prompt terminal styles
+# Tab Completion scripts for terminal
+###################################
+if [ -f ~/git-completion.bash ]; then
+source ~/git-completion.bash
+fi
+
+# Terminals Styles if present
+###################################
 if [ -f ~/.bash_prompt ]; then
 source ~/.bash_prompt
 fi
 
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH=./node_modules/.bin:$PATH
+###################################
+# Sets defualt terminal location
+###################################
 
-# Git Completion
-source ~/git-completion.bash
+# Uncomment this and change to your project directory if you wanted your terminal to autostart there
+# eval cd ~/Projects
 
 ###################################
 # Git aliases
@@ -23,12 +32,10 @@ alias gcv="git cz"
 alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gbd="git branch -D"
-alias gb="git branch --track"
 alias gf="git fetch"
 alias gpu="git pull"
 alias gph="git push"
 alias gm="git merge"
-alias gsr="git show-ref"
 alias gs="git status"
 alias gr="git remote -v"
 alias glp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -36,12 +43,9 @@ alias glp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset 
 #########################################
 # Random Shortcuts to normally used apps
 #########################################
-alias cddev="cd ~/Documents/proj"
-alias chrome="open -a /Applications/Browsers/Google\ Chrome.app"
-alias atom='open -a "/Applications/Atom.app"'
-alias ep="atom ~/.bash_profile"
-alias epr="atom ~/.bash_prompt"
+# Can be changed to your personal projects directory
+alias cddev="cd ~/Projects"
+# Ability to search previous commands
+alias search="cat ~/.bash_history | grep"
 
 
-export EDITOR="atom"
-export GIT_EDITOR="nano"
