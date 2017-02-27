@@ -11,7 +11,7 @@ The .bash_prompt is based on Extravagant Zsh Prompt and a few others.
 
 #### Basic View
 
-![Basic View](http://i.imgur.com/QphIP5i.png)
+![Basic View](example.png)
 
 ## Installation
 
