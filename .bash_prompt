@@ -1,14 +1,11 @@
 ###################################
 # Color Declerations
 ###################################
-LIGHTBLUE=$(tput setaf 12)
-DARKBLUE=$(tput setaf 24)
-DARKRED=$(tput setaf 160)
-DARKESTRED=$(tput setaf 196)
-NICEWHITE=$(tput setaf 230)
-NICEYELLOW=$(tput setaf 226)
-YELLOW=$(tput setaf 136)
-NICEORANGE=$(tput setaf 130)
+TEAL_USER=$(tput setaf 29)
+ORANGE_BRANCH=$(tput setaf 202)
+WHITE_ACCENTS=$(tput setaf 230)
+YELLOW_GIT_STATUS=$(tput setaf 220)
+YELLOW_FOLDER=$(tput setaf 136)
 
 ###################################
 # New Git Tracking System
@@ -17,8 +14,8 @@ __powerline() {
     # Unicode symbols
     GIT_BRANCH_SYMBOL='⑂ '
     GIT_BRANCH_CHANGED_SYMBOL='+'
-    GIT_NEED_PUSH_SYMBOL='⇡'
-    GIT_NEED_PULL_SYMBOL='⇣'
+    GIT_NEED_PUSH_SYMBOL='↾'
+    GIT_NEED_PULL_SYMBOL='⇂'
     RESET="\[$(tput sgr0)\]"
 
     __git_info() {
@@ -40,14 +37,14 @@ __powerline() {
       [ -n "$aheadN" ] && marks+=" $GIT_NEED_PUSH_SYMBOL$aheadN"
       [ -n "$behindN" ] && marks+=" $GIT_NEED_PULL_SYMBOL$behindN"
       # print the git branch segment without a trailing newline
-      printf "$NICEWHITE$GIT_BRANCH_SYMBOL$DARKRED$branch$NICEYELLOW$marks"
+      printf "$WHITE_ACCENTS$GIT_BRANCH_SYMBOL$ORANGE_BRANCH$branch$YELLOW_GIT_STATUS$marks"
     }
 
     ps1() {
       # Base PS1 prompt
-      PS1="\[$DARKBLUE\]\u\[ \]\[$NICEWHITE\]in\[ \]\[$YELLOW\]\w "
+      PS1="\[$TEAL_USER\]\u\[ \]\[$WHITE_ACCENTS\]in\[ \]\[$YELLOW_FOLDER\]\w "
       # Add Git Info and New Line and end to PS1 prompt
-      PS1+="$(__git_info)\[$NICEWHITE\]\n$\[$RESET\]\[ \]"
+      PS1+="$(__git_info)\[$WHITE_ACCENTS\]\n$\[$RESET\]\[ \]"
     }
     PROMPT_COMMAND=ps1
 }
