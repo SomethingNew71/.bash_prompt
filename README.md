@@ -21,6 +21,8 @@ The .bash_prompt is based on Extravagant Zsh Prompt and a few others.
 
 2. Copy the contents of the `.bash_profile` and `.bash_prompt` from the repo versions into your files located at `~`. Then go ahead and save each file. 
 
+3. Copy and paste the `git-completion.bash` file into your user root `~`. This will add really useful tab completion for git repos.
+
 3. Restart your terminal application or re-source your `.bash_profile`.
 
 4. Enjoy the new styles and git functionality!
