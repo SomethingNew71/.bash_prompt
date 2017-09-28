@@ -30,7 +30,7 @@ fi
 ###################################
 
 # Can be changed to your personal projects directory
-alias cddev="cd ~/"
+alias cddev="cd ~"
 
 ###################################
 # Git aliases
