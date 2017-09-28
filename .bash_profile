@@ -51,8 +51,9 @@ alias glp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset 
 
 #########################################
 # Random Shortcuts to normally used apps
-#########################################4
-alias cddev="cd ~/Projects"
+#########################################
+# Change this path to your default project folders
+# alias cddev="cd ~/Projects"
 alias ep="atom ~/.bash_profile"
 alias epr="atom ~/.bash_prompt"
 alias search="cat ~/.bash_history | grep"
